@@ -60,3 +60,14 @@ deletebutton.addEventListener("click", function () {
     empytcart.style.display = "grid";
     shoppingStatus.setAttribute("data-icon",0);
 })
+
+//change the images 
+function changeImage(id) {
+    let primaryImg = document.getElementById("primary_img");
+    let newsrc = "/images/image-product-" + id + ".jpg";
+    primaryImg.src = newsrc
+    document.querySelectorAll(".img").forEach((item) => {
+        item.setAttribute("class","img")
+    })
+    document.getElementById(id).setAttribute("class","img select")
+}
