@@ -594,6 +594,7 @@ div[class^="swiper-button"] >i:hover{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        cursor: pointer;
 }
     .images__secondary{
         display: flex;
@@ -611,6 +612,7 @@ div[class^="swiper-button"] >i:hover{
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         max-width: 90px;
+        cursor: pointer;
 }
     .images__secondary img:hover{
         border: 2px solid var(--primary-Orange);
@@ -625,5 +627,64 @@ div[class^="swiper-button"] >i:hover{
     .product__content .container button#addToCart{
         height: 60px;
     }
+    .modal{
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal .container{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    .modal .image__container{
+        width: 50%;
+        height: 50%;
+    }
+    .modal .image__container img{
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    .modal .icon__container{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    .modal .icon__container button{
+        width: 40px;
+        height: 40px;
+        background-color: var(--neutral-White);
+        border: none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: var(--neutral-Very-dark-blue);
+        font-size: 1.2rem;
+        transition: all .3s ease-in-out ;
+        -webkit-transition: all .3s ease-in-out ;
+        -moz-transition: all .3s ease-in-out ;
+        -ms-transition: all .3s ease-in-out ;
+        -o-transition: all .3s ease-in-out ;
+        cursor: pointer;
 }
+    .modal .icon__container button:hover{
+        background-color: var(--primary-Orange);
+        color: var(--neutral-White);
+    }
+
+}
+
 /* ----end-media-query---- */
