@@ -71,3 +71,44 @@ function changeImage(id) {
     })
     document.getElementById(id).setAttribute("class","img select")
 }
+//model function 
+let btnNext = document.getElementById("btn_Next");
+let btnPrevious = document.getElementById("btn_Previous");
+let btnHide = document.querySelector(".btn_hide");
+let modal = document.querySelector(".modal");
+let id = 1;
+let img = document.querySelector("#primary_img_model");
+let arrayofimages = [
+  "/images/image-product-2.jpg",
+  "/images/image-product-3.jpg",
+  "/images/image-product-4.jpg",
+];
+let currentIndex = 0;
+btnNext.addEventListener("click", function () {
+    currentIndex++;
+    if (currentIndex >= arrayofimages.length) {
+        currentIndex = 0;
+        img.src = arrayofimages[currentIndex];
+    } else {
+        img.src = arrayofimages[currentIndex]
+    }
+});
+btnPrevious.addEventListener("click", function () {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = arrayofimages.length - 1;
+        img.src=arrayofimages[currentIndex]
+    } else {
+        img.src=arrayofimages[currentIndex]
+    }
+})
+let primaryImg = document.getElementById("primary_img");
+primaryImg.addEventListener("click", function () {
+    modal.classList.add("active")
+})
+btnHide.addEventListener("click", function () {
+    modal.classList.remove("active");
+})
+
+
+
