@@ -34,6 +34,7 @@ Users should be able to:
 ### Screenshot
 
 ![](mobilescreenshot.png)
+![](desktopscreenshot.png)
 
 
 ## My process
