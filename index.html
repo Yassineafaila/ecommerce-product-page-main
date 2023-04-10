@@ -175,12 +175,16 @@
               <p>$250.00</p>
             </div>
           </div>
-          <div class="Quantity">
-            <img src="/images/icon-minus.svg" alt="minus" class="minus" onclick="minus()">
-            <input type="text"  id="quantity" value="0" disabled>
-            <img src="/images/icon-plus.svg" alt="plus" class="plus" onclick="add()">
+          <div class="button_with_quantity">
+            <div class="Quantity">
+              <img src="/images/icon-minus.svg" alt="minus" class="minus" onclick="minus()">
+              <input type="text"  id="quantity" value="0" disabled>
+              <img src="/images/icon-plus.svg" alt="plus" class="plus" onclick="add()">
+            </div>
+            <button id="addToCart" data-icon="shopping-cart">Add to cart</button>
+
           </div>
-          <button id="addToCart" data-icon="shopping-cart">Add to cart</button>
+          
 
         </div>
       </section>
@@ -192,7 +196,9 @@
           <button id="btn_Previous"><i class="fa-solid fa-angle-left"></i></button>
         </div>
       <div class="image__container">
-        <img src="/images/image-product-1.jpg" alt="image">
+        <button class="btn_hide"><i class="fa-solid fa-xmark"></i></button>
+        <img id="primary_img_model" src="/images/image-product-1.jpg" alt="image">
+          
       </div>
        <div class="icon__container">
           <button id="btn_Next"><i class="fa-solid fa-angle-right"></i></button>
